@@ -45,14 +45,14 @@ jobs:
         run: cargo test --locked --all-targets --all-features
 
   msrv:
-    name: Rust 1.88 Compatibility
+    name: Rust 1.89 Compatibility
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@master
         with:
-          toolchain: "1.88.0"
+          toolchain: "1.89.0"
       - uses: Swatinem/rust-cache@v2
       - name: Install Linux dependencies
         run: |
