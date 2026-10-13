@@ -9,7 +9,7 @@ pub enum Page {
     #[default]
     Home,
     Instances,
-    Skins;
+    Skins,
     Worlds,
     Discover,
     Library,
@@ -27,7 +27,7 @@ impl Page {
             Self::Onboarding => "Welcome",
             Self::Home => "Home",
             Self::Instances => "Instances",
-            Self::Skins => "Skin"
+            Self::Skins => "Skin",
             Self::Worlds => "Worlds & Files",
             Self::Discover => "Discover",
             Self::Library => "Library",
@@ -77,7 +77,7 @@ impl Page {
             Self::Onboarding => "onboarding",
             Self::Home => "home",
             Self::Instances => "instances",
-            Self::Skins => "skins"
+            Self::Skins => "skins",
             Self::Worlds => "worlds",
             Self::Discover => "discover",
             Self::Library => "library",

@@ -289,7 +289,11 @@ pub fn show(state: &mut AppState, ctx: &egui::Context, ui: &mut egui::Ui) {
             .selected_text(selected_text)
             .show_ui(ui, |ui| {
                 for cape in &page.capes {
-                    ui.selectable_value(&mut page.selected_cape, Some(cape.id.clone()), label(cape));
+                    ui.selectable_value(
+                        &mut page.selected_cape,
+                         Some(cape.id.clone()),
+                         label(cape),
+                    );
                 }
             });
 

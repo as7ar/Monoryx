@@ -5,6 +5,6 @@ pub mod pages;
 pub mod palette;
 #[cfg(test)]
 mod review;
-pub mod skins;
 pub mod shell;
+pub mod skins;
 pub mod theme;
