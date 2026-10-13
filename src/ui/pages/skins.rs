@@ -291,8 +291,8 @@ pub fn show(state: &mut AppState, ctx: &egui::Context, ui: &mut egui::Ui) {
                 for cape in &page.capes {
                     ui.selectable_value(
                         &mut page.selected_cape,
-                         Some(cape.id.clone()),
-                         label(cape),
+                        Some(cape.id.clone()),
+                        label(cape),
                     );
                 }
             });
