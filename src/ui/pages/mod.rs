@@ -8,5 +8,6 @@ pub mod logs;
 pub mod nexeu;
 pub mod onboarding;
 pub mod screenshots;
+pub mod skins;
 pub mod settings;
 pub mod worlds;

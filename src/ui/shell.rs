@@ -249,6 +249,7 @@ pub fn app_update(state: &mut AppState, ctx: &egui::Context, _frame: &mut eframe
                 match state.page {
                     Page::Home => crate::ui::pages::home::show(state, ctx, ui),
                     Page::Instances => crate::ui::pages::instances::show(state, ctx, ui),
+                    Page::Skins => crate::ui::pages::skins::show(state, ctx, ui),
                     Page::Worlds => crate::ui::pages::worlds::show(state, ctx, ui),
                     Page::Discover => crate::ui::pages::discover::show(state, ctx, ui),
                     Page::Library => crate::ui::pages::library::show(state, ctx, ui),
@@ -1014,6 +1015,7 @@ fn page_icon(page: Page) -> &'static str {
         Page::Onboarding => "✨",
         Page::Home => "🏠",
         Page::Instances => "📦",
+        Page::Skins => "🖼️",
         Page::Worlds => "📁",
         Page::Discover => "🧭",
         Page::Library => "🔖",
@@ -1104,6 +1106,7 @@ fn page_tooltip(page: Page) -> &'static str {
     match page {
         Page::Home => "Home · Your selected instance, quick actions, and recent activity",
         Page::Instances => "Instances · Create, configure, and manage Minecraft installations",
+        Page::Skins => "Skins · Preview and apply Minecraft skins and capes",
         Page::Worlds => "Worlds & Files · Browse world saves, resource packs, and instance files",
         Page::Discover => "Discover · Search and install mods, modpacks, and shaders",
         Page::Library => "Library · Installed mods and content across your instances",
