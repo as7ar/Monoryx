@@ -10,7 +10,7 @@ homepage = "https://demonz.org/projects/monoryx"
 readme = "README.md"
 keywords = ["minecraft", "launcher", "egui"]
 categories = ["games"]
-rust-version = "1.88"
+rust-version = "1.89"
 
 [[bin]]
 name = "monoryx"
